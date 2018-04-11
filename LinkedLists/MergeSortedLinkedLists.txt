@@ -13,3 +13,39 @@ Node* MergeLists(Node *headA, Node* headB)
         return headA;
     }
 }
+
+def MergeLists(headA, headB):
+    if(headA == null):
+        return headB
+    if(headB == null):
+        return headA
+    if(headA == null or headB == null):
+        return null
+    if(headA.data < headB.data):
+        headA.next = MergeLists(headA.next, headB)
+        return headA
+    else: # element in A is higher than element in B
+        headB.next = MergeLists(headA, headB.next)
+        return headB
+
+// Working Java Code
+Node mergeLists(Node headA, Node headB) {
+    if (headA == null && headB == null) return null;
+    else if (headA == null) return headB;
+    else if (headB == null) return headA;
+    
+    if(headA.data <= headB.data){
+        headA.next = mergeLists(headA.next, headB);
+	return headA;
+	}
+    else {
+        //Node temp = headB;
+        //headB = headB.next;
+        //temp.next = headA;
+        //headA = temp;
+	//Commenting the swap logic and keeping everything into the Recursion call
+        headA.next = mergeLists(headA, headB.next);
+	return headB;
+    }
+    
+}
