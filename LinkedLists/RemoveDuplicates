@@ -1,0 +1,25 @@
+/* Non Recursion */
+Node RemoveDuplicates(Node head) {
+    Node n= head;
+    while(head.next!=null)
+        {
+       
+        if( head.data==head.next.data)
+            head.next=head.next.next;
+        else
+            head=head.next;
+    }
+    return n;
+}
+/* Recursion */
+/*Node RemoveDuplicates(Node head) {
+    if(head.next != null){
+        if(head.data == head.next.data){
+            head.next = head.next.next;
+            RemoveDuplicates(head);
+        } else {
+            RemoveDuplicates(head.next);
+        }
+    }
+    return head;
+}*/
