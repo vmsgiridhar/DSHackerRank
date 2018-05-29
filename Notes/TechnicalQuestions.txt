@@ -5,7 +5,7 @@ Data Structures
 3. Stacks & Queues
 4. Heaps
 5. Vectors / ArrayLists
-6. Hash Tables
+6. Hash Tables *Important
 
 Algorithms
 
@@ -21,3 +21,14 @@ Concepts
 3. Recursion
 4. Dynamic Programming
 5. Big O Time & Space
+
+Powers of 2 is more important too.
+
+2 ^ 7 = 128
+2 ^ 8 = 256
+2 ^ 10 = 1024 [1024 bits is 1 KB]
+2 ^ 16 = 65536 [64 KB]
+2 ^ 20 = 1048576 [1 million 1 MB]
+2 ^ 30 = 1073741824 [1 billion 1 GB]
+2 ^ 32 = 4294967296 [4 GB]
+2 ^ 40 = 1099511627776 [1 TB]
